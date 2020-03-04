@@ -8,11 +8,15 @@ public class App {
 	
 	public static void main(String[] args) {
 		
-		Car bmw = new BMW();
-		Car tesla = new Tesla();
+//		using the following right now will cause null point exception in tesla and BMW class.
+//		because we are using autowired in those classes to initilize Engine class, 
+//		when using spring and creating component programming, its important to follow spring methodology.
 		
-		System.out.println(bmw.spec());
-		System.out.println(tesla.spec());
+//		Car bmw = new BMW();
+//		Car tesla = new Tesla();
+//		
+//		System.out.println(bmw.spec());
+//		System.out.println(tesla.spec());
 		
 		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 		Car c = context.getBean("bmw", Car.class);
