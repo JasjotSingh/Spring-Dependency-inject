@@ -2,11 +2,11 @@ package org.Spring_tut.CarClass;
 
 import org.springframework.stereotype.Component;
 
-@Component
+
 public class Engine {
 	String type;
 	
-	Engine(){
+	public Engine(){
 		//all constructors will run by default, 
 		//initlized by AnnotationConfigApplicationContext in main method.
 		//in case constructor needs(as argument) an object of another class marked as Component(annotation), then the required object class,

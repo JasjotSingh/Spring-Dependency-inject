@@ -4,7 +4,7 @@ import org.Spring_tut.Interface.Car;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-@Component("tesla")
+
 public class Tesla implements Car{
 	@Autowired
 	Engine eng;
