@@ -1,6 +1,6 @@
 package org.Spring_tut;
 
-import org.Spring_tut.CarClass.*;
+
 import org.Spring_tut.Interface.Car;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -19,8 +19,10 @@ public class App {
 //		System.out.println(tesla.spec());
 		
 		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
-		Car c = context.getBean("bmw", Car.class);
-		System.out.println(c.spec());
+		Car c1 = context.getBean("tesla", Car.class);
+		Car c2 = context.getBean("bmw", Car.class);
+		System.out.println(c1.spec());
+		System.out.println(c2.spec());
 		
 		context.close();
 	}

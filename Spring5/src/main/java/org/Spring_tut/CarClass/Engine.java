@@ -1,6 +1,5 @@
 package org.Spring_tut.CarClass;
 
-import org.springframework.stereotype.Component;
 
 
 public class Engine {
